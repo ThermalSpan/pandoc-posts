@@ -1,13 +1,7 @@
-# Compiler Stuff
-CC        	= g++
-CFLAGS    	= -c -std=c++11 -stdlib=libc++ -Wall 
-BISON 		= /usr/local/Cellar/bison/3.0.4/bin/bison
-FLEX 		= flex
-
 # Directories
 TEMPDIRS  	= build build/pdfs build/posts
 
-# File List/s
+# File Lists
 MARKDOWN_FILES := $(shell find . -name '*.md')
 PDFS = $(MARKDOWN_FILES:./%.md=./build/pdfs/%.pdf)
 POSTS = $(MARKDOWN_FILES:./%.md=./build/posts/%.html)
@@ -28,7 +22,7 @@ build/pdfs/%.pdf : %.md
 build/posts/%.html : %.md
 	pandoc -o $@ $<
 
-# Phony Command
+# Phony Commands
 .PHONY: clean
 clean:
 	rm -f -r build $(DIR_FILE)

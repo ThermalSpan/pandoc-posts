@@ -11,6 +11,8 @@ The current key components are:
 
 For now the build components and the the websource live in the same repository. I think a fair argument could be made for seperating them at some point once I get into a better routine. 
 
+The pandoc posts project is really important, and is where most of the content lives. I would like to keep it as a seperate repisotory since it represents a good content divide. It also allows the issue tracker to be used soley for content related issues. I can also the branches to cleany mark drafts and such. 
+
 My short term goals are:
 
 * Have three articles that aren't totally embarrassing in the pandoc-posts project
@@ -43,3 +45,4 @@ Some Post ideas:
 * Walk through a cool math problem to show off all that awesome KaTeX
 * Introduce some notation and explain its tradeoffs. Like bra-ket, or Einstein summation. 
 * Take some notes on the many papers you think you've read, maybe a prolog implementation paper
+* To maintain a list of other notable places on the web. Like other personal websites and such. Though, this might be better as a pure website for interactive purposes

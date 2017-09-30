@@ -21,7 +21,7 @@ build/pdfs/%.pdf : %.md
 
 build/posts/%.liquid: %.md
 	pandoc -o $@ $<
-	blockpass --oputput $@ --input $< --omit-start-delim
+	blockpass --output $@ --input $< --omit-start-delim
 
 # Phony Commands
 .PHONY: clean

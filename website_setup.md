@@ -1,19 +1,13 @@
 ---
 extends: default.liquid
 
-title: Regular Expressions
+title: Website Setup
 ---
 
 # Website Setup
 This post documents how my website is setup. Since I deploy it via github pages, that really ammounts to how it is built.
 
-The premise is that I have several component projects that all dump their build artifacts into a common root directory. I then run the cobalt templater on that directory to produce the final website.
-
-The current key components are:
-
-* KaTeX
-* My pandoc posts directory
-* The main website source directory
+The premise is that I have several component projects that all dump their build artifacts into a common root directory. I then run the a templater on that directory to produce the final website.
 
 ## Tools
 You will need the following special tools in your `PATH`.

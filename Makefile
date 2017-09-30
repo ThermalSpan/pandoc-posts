@@ -4,7 +4,7 @@ TEMPDIRS  	= build build/pdfs build/posts
 # File Lists
 MARKDOWN_FILES := $(shell find . -name '*.md')
 PDFS = $(MARKDOWN_FILES:./%.md=./build/pdfs/%.pdf)
-POSTS = $(MARKDOWN_FILES:./%.md=./build/posts/%.html)
+POSTS = $(MARKDOWN_FILES:./%.md=./build/posts/%.liquid)
 DIR_FILE = './.dir_file'
 
 # Targets
@@ -19,7 +19,7 @@ $(DIR_FILE) :
 build/pdfs/%.pdf : %.md
 	pandoc -o $@ $<
 
-build/posts/%.html : %.md
+build/posts/%.liquid: %.md
 	pandoc -o $@ $<
 
 # Phony Commands

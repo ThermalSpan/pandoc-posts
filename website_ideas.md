@@ -39,7 +39,7 @@ title: Website Ideas
 * Introduce some notation and explain its tradeoffs. Like bra-ket, or Einstein summation.
 * A post talking about implementing prolog would be cool
 
-## Some Cheatshet ideas
+## Some Cheatsheet ideas
 
 * Create Context Free Grammer cheatsheet
 * Create Integration methods cheatsheet

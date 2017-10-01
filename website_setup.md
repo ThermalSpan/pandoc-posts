@@ -47,7 +47,7 @@ I installed pandoc using brew:
 These are are the projects that contribute content to the website.
 
 ### KaTeX
-[blockpass](https://github.com/Khan/KaTeX) is a javascript library for math rendering. From Khan Academy! I am currently using the following tag:
+[KaTeX](https://github.com/Khan/KaTeX) is a javascript library for math rendering. From Khan Academy! I am currently using the following tag:
 
     v0.7.1
 
@@ -57,7 +57,7 @@ Pandoc supports KaTeX in html, so that's how I use it.
 [pandoc-posts](https://github.com/ThermalSpan/pandoc-posts) is the repository where most of the posts live. Top of tree on the master branch should be sufficient. Drafts live in other branches.
 
 ### thermalspan.github.io-source
-[thermalspan.github.io-source](https://github.com/ThermalSpan/thermalspan.github.io-source) is kitchen sink for this website. All the templates, misc pages, and such live here. And for now the "build system" does too, but I'd like to rip that out.
+[thermalspan.github.io-source](https://github.com/ThermalSpan/thermalspan.github.io-source) is the kitchen sink for this website. All the templates, misc pages, and such live here. And for now the "build system" does too, but I'd like to rip that out.
 
 ## How to Build and Deploy
 

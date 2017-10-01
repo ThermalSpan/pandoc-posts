@@ -2,7 +2,7 @@
 extends: default.liquid
 title: Website Ideas
 ---
-# $title
+# Website Ideas
 
 ## Short Term Goals
 
@@ -39,3 +39,14 @@ title: Website Ideas
 * Introduce some notation and explain its tradeoffs. Like bra-ket, or Einstein summation.
 * A post talking about implementing prolog would be cool
 
+## Some Cheatshet ideas
+
+* Create Context Free Grammer cheatsheet
+* Create Integration methods cheatsheet
+* Maybe a Rust cheat sheet?
+    + I think a clap cheat sheet would be awesome
+    + And error_chain would also be useful
+    + How to think in terms of arenas and such
+* Maybe a vim cheat sheet?
+    + Could split into areas like navigation
+    + ex mode

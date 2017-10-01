@@ -59,41 +59,18 @@ Pandoc supports KaTeX in html, so that's how I use it.
 ### thermalspan.github.io-source
 [thermalspan.github.io-source](https://github.com/ThermalSpan/thermalspan.github.io-source) is kitchen sink for this website. All the templates, misc pages, and such live here. And for now the "build system" does too, but I'd like to rip that out.
 
+## How to Build and Deploy
 
-## Notes
+First checkout thermalspan.github.io-source, and we should be able to build from there. Note that the build script expects a checkout of [thermalspan.github.io](https://github.com/ThermalSpan/thermalspan.github.io) next to it. When the build script is passed 'deploy' it will, among other things, set copy the result of the build over to the thermalspan.github.io directory. From there we commit everything and push it.
 
-The pandoc posts project is really important, and is where most of the content lives. I would like to keep it as a seperate repisotory since it represents a good content divide. It also allows the issue tracker to be used soley for content related issues. I can also the branches to cleany mark drafts and such.
+    git clone https://github.com/ThermalSpan/thermalspan.github.io-source.git
+    cd thermalspan.github.io-source
+    ./build.zsh deploy
+    cd ../thermalspan.github.io
+    git add -A
+    git commit -m "Another day, Another deployment"
+    git push origin master
 
-My short term goals are:
 
-* Have three articles that aren't totally embarrassing in the pandoc-posts project
-* Write a better build script / or find an off the shelf solution that meets my needs.
-* Fixup the connect page
 
-My medium term goals are:
 
-* Template the posts to include download link to pdf version
-* Include some projects
-* Perhaps host some documentation, though this is pending having a project that's worth documenting
-* To go with above, allow build script to build and include documentation in a clean way
-
-My long term goals are:
-
-* Seperate build system / templater from the webpage source
-* Include fancier front page options for sorting through options
-* Include a source option
-* Include at least one webGL / javascript interactive project
-
-Some nifty ideas that might be worth implementing:
-
-* That progress bar that quantamagazine has on their articles is awesome.
-
-Some Post ideas:
-
-* Talk about cargo cache commands and how you use them
-* Talk about nvim setup, or at least one useful trick for configuring SpaceVim
-* Create Context Free Grammer cheatsheet
-* Walk through a cool math problem to show off all that awesome KaTeX
-* Introduce some notation and explain its tradeoffs. Like bra-ket, or Einstein summation.
-* Take some notes on the many papers you think you've read, maybe a prolog implementation paper
-* To maintain a list of other notable places on the web. Like other personal websites and such. Though, this might be better as a pure website for interactive purposes

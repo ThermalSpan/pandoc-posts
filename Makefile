@@ -2,7 +2,7 @@
 TEMPDIRS  	= build build/pdfs build/posts
 
 # File Lists
-MARKDOWN_FILES := $(shell find . -name '*.md')
+MARKDOWN_FILES := $(shell find . -name '*.md' -and -not -regex '^\./\.git/.*')
 PDFS = $(MARKDOWN_FILES:./%.md=./build/pdfs/%.pdf)
 POSTS = $(MARKDOWN_FILES:./%.md=./build/posts/%.liquid)
 DIR_FILE = './.dir_file'

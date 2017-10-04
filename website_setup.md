@@ -5,13 +5,15 @@ title: Website Setup
 ---
 
 # Website Setup
-This post documents how my website is built and deployed. This document is a living document and will change as my process changes.
 
-I have several component projects that all ditto their build artifacts into a common directory. I then run a static site generator on that directory to produce the final website.
+## Introduction
+This post documents how my website is built and deployed. This document is a living document and will change as my process changes. I think it makes an interesting post, but it exists primarily as a reference for myself.
+
+The website draws material from lots of website, but the core principle is simple. I have several component projects that all ditto their build artifacts into a common directory. I then run a static site generator on that directory to produce the final website.
+
+The rest of the post will detail the tool and dependencies in enough detail for me (and others) to replicate the website in another environment.
 
 ## Tools
-
-You will need the following special tools in your `PATH`.
 
 ### Cobalt
 
@@ -46,6 +48,23 @@ I installed pandoc using brew:
     cd blockpass
     cargo install
 
+### LaTeX
+
+You will need a TeX distribution installed for several of the projects. I have been using MacTeX 2016 currently. In particular the pdflatex version I have been using is:
+
+    pdfTeX 3.14159265-2.6-1.40.17 (TeX Live 2016)
+    kpathsea version 6.2.2
+    ...
+    Compiled with libpng 1.6.21; using libpng 1.6.21
+    Compiled with zlib 1.2.8; using zlib 1.2.8
+    Compiled with xpdf version 3.04
+
+### make
+
+This might to much information, but it may help debug something in the future. I am currently using:
+
+    GNU Make 3.81
+
 ## Dependences
 
 These are are the projects that contribute content to the website.
@@ -61,6 +80,10 @@ Pandoc supports KaTeX in html, so that's how I use it.
 ### pandoc-posts
 
 [pandoc-posts](https://github.com/ThermalSpan/pandoc-posts) is the repository where most of the posts live. Top of tree on the master branch should be sufficient. Drafts live in other branches.
+
+### resume
+
+[resume](https://github.com/ThermalSpan/resume) is the respository where I keep my resume. 
 
 ### thermalspan.github.io-source
 

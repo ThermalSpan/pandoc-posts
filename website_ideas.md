@@ -50,3 +50,8 @@ title: Website Ideas
 * Maybe a vim cheat sheet?
     + Could split into areas like navigation
     + ex mode
+
+## Other Project ideas
+
+* Working on an implicit equation plotter
+    + Or at least something that could generate a mesh for another plotter [plotly](https://plot.ly/).

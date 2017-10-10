@@ -20,7 +20,7 @@ build/pdfs/%.pdf : %.md
 	pandoc -o $@ $<
 
 build/posts/%.liquid: %.md
-	pandoc -o $@ $< --katex=../static/KaTeX/katex.js
+	pandoc -o $@ $< --katex --to html
 	blockpass --output $@ --input $< --omit-start-delim
 
 # Phony Commands

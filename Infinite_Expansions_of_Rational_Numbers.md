@@ -22,19 +22,23 @@ However, there are more interesting examples. For example $0.236\overline{151}$ 
 
 Assume $x$ has a finite expansion in $\beta$. Then for some $m \in \mathbb{Z}$ and $n \in \mathbb{Z}$ we have
 
-\begin{align*}
+$$
+\begin{aligned}
 x &= \sum\limits_{i=-m}^n \beta^i a_i \\
 x &= \frac{1}{\beta^m}\sum\limits_{i=0}^{n+m} \beta^i a_i\text{.}
-\end{align*}
+\end{aligned}
+$$
 
 Since the numerator is an integer $x$ is of the form  $\frac{k}{\beta^m}$.
 
 Assume $x = \frac{k}{\beta^m}$. Since k is an integer, it will have a finite representation in any integer radix. Therefore for some $n$ we have
 
-\begin{align*}
+$$
+\begin{aligned}
 k &= \sum\limits_{i=0}^n \beta^i a_i \\
 \frac{k}{\beta^m} &= \sum\limits_{i=0}^n \beta^{i-m} a_i\text{.}
-\end{align*}
+\end{aligned}
+$$
 
 This is a finite expansion of $x$ with radix $\beta$.
 
@@ -46,10 +50,12 @@ This is a finite expansion of $x$ with radix $\beta$.
 
 Assume $\frac{a}{b}$ has a finite expansion in $\beta$. Then by theorem (2.1), for some $k \in \mathbb{Z} , m \in \mathbb{Z}$ we have
 
-\begin{align*}
+$$
+\begin{aligned}
 \frac{a}{b} &= \frac{k}{\beta^m}\\
 a \cdot \beta^m &= b \cdot k \text{.}
-\end{align*}
+\end{aligned}
+$$
 
 Since $\text{gcd}(a,b)=1$ we see that $b | \beta^m$.
 
@@ -75,13 +81,15 @@ Rational numbers whose denominator do not share their prime factors with the rad
 
 Let $x =Z.a_1a_2...a_k \overline{d_1 d_2...d_n}$ be such an expansion, where $Z$ is the integer part of the expansion $a_i$ for $1 \leq i \leq k$ and $d_j$ for $1 \leq j \leq n$ are the digits of the expansion.
 
-\begin{align}
+$$
+\begin{aligned}
 x &= Z.a_1a_2...a_k \overline{d_1 d_2...d_n} \\
 \beta^k x &= Z \ a_1a_2...a_k.\overline{d_1 d_2...d_n}\\
 \beta^{k+n} x &= Z \ a_1a_2...a_kd_1 d_2...d_n.\overline{d_1 d_2...d_n}\\
 (\beta^{k+n} - \beta^k)x &= (Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k)\\
 x &= \frac{(Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k)}{\beta^{k+n} - \beta^k}
-\end{align}
+\end{aligned}
+$$
 
 From line (1) to line (2) we move the radix point but multiplying both sides by the radix $k$ times. By subtracting line (2) from line (3) we can express $x$ as a fraction of two integers while also getting rid of the infinite tail in each line. By line (5) we see that $x$  can be expressed as the ratio of two integers, and is therefore a rational number.
 

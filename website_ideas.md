@@ -55,3 +55,8 @@ title: Website Ideas
 
 * Working on an implicit equation plotter
     + Or at least something that could generate a mesh for another plotter [plotly](https://plot.ly/).
+* Build an rasterized image to vector graphic converter
+    + I think I could use a cellular automata like process divide the image into like-color regions 
+    + Construct boundaries of those regions using the border pixels as control points
+    + Having a region outline option would be pretty slick
+

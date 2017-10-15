@@ -6,13 +6,19 @@ title: Infinite Expansions of Rational Numbers
 
 ## Introduction
 
-It may seem odd at first that rational numbers can have an infinite representation. There are some examples that come to mind quickly, for example
+It may seem odd at first that rational numbers can have an infinite decimal expansion. There are some examples that come to mind quickly though, for example
 
 $$\frac{1}{3}=0.\overline{3}\text{.}$$
 
-However, there are more interesting examples. For example $0.236\overline{151}$ is also a rational number. In the first section I will explore some constructive theorems that will tells us about infinite representations of rational numbers. I will end the first section by showing that all repreating expansions of real numbers in a given radix are in rational. In the second section I will go through a couple examples on how to use these theorems to find a simple fractional representation of several repeating infinite expansions.
+However, there are more interesting examples. For example $0.236\overline{151}$ is also a rational number. An iteresting idea to add into the mix is changing the radix of our expansion. For example, consider a radix of 3. Here, the integer 3 is represented as $10$. That means that $1/3$ in radix 3 has finite expansion.
 
-## Results Concerning Infinite Expansions
+$$\frac{1}{10} = 0.1$$
+
+In this article we will explore infinite expansions of rational numbers and different under different radices.
+
+## Finite Expansions
+
+A good place to start is understanding when a rational number can have a finite expansion. We will start with a general case in Theorem 1. 
 
 #### Theorem 1
 
@@ -73,6 +79,8 @@ If $b$ is to divide some power of $\beta$, then all of the prime factors of $b$ 
 
 Rational numbers whose denominator do not share their prime factors with the radix will always have infinite expansions. This is a nice explanation for why $\frac{1}{3}$ or $\frac{1}{7}$ have infinite decimal representations.
 
+## Infinite Expansions
+
 #### Theorem 3
 
 <i>If the expansion of a real number $x$ with radix $\beta$ is infinite but repeating, then $x$ is rational.</i>
@@ -83,11 +91,11 @@ Let $x =Z.a_1a_2...a_k \overline{d_1 d_2...d_n}$ be such an expansion, where $Z$
 
 $$
 \begin{aligned}
-x &= Z.a_1a_2...a_k \overline{d_1 d_2...d_n} \\
-\beta^k x &= Z \ a_1a_2...a_k.\overline{d_1 d_2...d_n}\\
-\beta^{k+n} x &= Z \ a_1a_2...a_kd_1 d_2...d_n.\overline{d_1 d_2...d_n}\\
-(\beta^{k+n} - \beta^k)x &= (Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k)\\
-x &= \frac{(Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k)}{\beta^{k+n} - \beta^k}
+x &= Z.a_1a_2...a_k \overline{d_1 d_2...d_n} & (1)\\
+\beta^k x &= Z \ a_1a_2...a_k.\overline{d_1 d_2...d_n} & (2)\\
+\beta^{k+n} x &= Z \ a_1a_2...a_kd_1 d_2...d_n.\overline{d_1 d_2...d_n} & (3)\\
+(\beta^{k+n} - \beta^k)x &= (Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k) & (4)\\
+x &= \frac{(Z \ a_1a_2...a_kd_1 d_2...d_n) - (Z \ a_1a_2...a_k)}{\beta^{k+n} - \beta^k} & (5)
 \end{aligned}
 $$
 

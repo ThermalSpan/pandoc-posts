@@ -48,6 +48,14 @@ I installed pandoc using brew:
     cd blockpass
     cargo install
 
+### divmaker
+
+[divmaker](https://github.com/ThermalSpan/divmaker) is a small utility I wrote. Top of tree should be find. You can install by downloading and building it:
+
+    git clone https://github.com/ThermalSpan/divmaker.git
+    cd divmaker
+    cargo install
+
 ### LaTeX
 
 You will need a TeX distribution installed for several of the projects. I have been using MacTeX 2016 currently. In particular the pdflatex version I have been using is:

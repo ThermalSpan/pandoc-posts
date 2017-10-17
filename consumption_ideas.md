@@ -27,5 +27,6 @@ title: Consumption Ideas
 
 * The Art of Prolog
 * [nand2tetris](http://nand2tetris.org)
+* I should continue working through [The Book of Shaders](https://thebookofshaders.com)
 * I should prolly work through some math books again...
 

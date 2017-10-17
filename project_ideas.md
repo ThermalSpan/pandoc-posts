@@ -29,6 +29,7 @@ title: Project Ideas
 
 * That progress bar that quantamagazine has on their articles is awesome.
 * A page for linking to other cool websites. 
+* I would love to add a search option. Rust Docs do it on a static website...
 
 ### Some Post Ideas
 

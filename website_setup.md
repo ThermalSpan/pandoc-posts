@@ -15,6 +15,18 @@ The rest of the post will detail the tool and dependencies in enough detail for 
 
 ## Tools
 
+### Rust Toolchain
+
+You will need the rust toolchain installed (rustc and cargo.) I recomend using [rustup](https://www.rustup.rs). I use nightly builds and update frequently. Currently I am running:
+
+```
+active toolchain
+----------------
+
+nightly-x86_64-apple-darwin (default)
+rustc 1.22.0-nightly (7778906be 2017-10-14)
+```
+
 ### Cobalt
 
 [cobalt.rs](https://github.com/cobalt-org/cobalt.rs) is a static site generator. I am currently using:
@@ -42,7 +54,7 @@ I installed pandoc using brew:
 
 ### blockpass
 
-[blockpass](https://github.com/ThermalSpan/blockpass) is a small utility I wrote. Top of tree should be fine for now. You can install by downloading and building it:
+[blockpass](https://github.com/ThermalSpan/blockpass) is a small utility I wrote. You can install by downloading and building it:
 
     git clone https://github.com/ThermalSpan/blockpass.git
     cd blockpass
@@ -50,7 +62,7 @@ I installed pandoc using brew:
 
 ### divmaker
 
-[divmaker](https://github.com/ThermalSpan/divmaker) is a small utility I wrote. Top of tree should be find. You can install by downloading and building it:
+[divmaker](https://github.com/ThermalSpan/divmaker) is a small utility I wrote. You can install by downloading and building it:
 
     git clone https://github.com/ThermalSpan/divmaker.git
     cd divmaker
@@ -99,7 +111,7 @@ Pandoc supports KaTeX in html, so that's how I use it.
 
 ## How to Build and Deploy
 
-First checkout thermalspan.github.io-source, and we should be able to build from there. Note that the build script expects a checkout of [thermalspan.github.io](https://github.com/ThermalSpan/thermalspan.github.io) next to it. When the build script is passed 'deploy' it will, among other things, set copy the result of the build over to the thermalspan.github.io directory. From there we commit everything and push it.
+First checkout thermalspan.github.io-source, and we should be able to build from there. Note that the build script expects a checkout of [thermalspan.github.io](https://github.com/ThermalSpan/thermalspan.github.io) next to it. When the build script is passed 'deploy' it will, among other things, set copy the result of the build over to the thermalspan.github.io directory. It is also important to note that the build script creates an `env.liquid` file. This file contains, among other things, the base url to use for the build. If building local, this is the directory the deploy lives in. For a deploy build this is the URL the website lives at. After buiding the site, we commit everything to the repo that hosts the site and push it.
 
     git clone https://github.com/ThermalSpan/thermalspan.github.io-source.git
     cd thermalspan.github.io-source

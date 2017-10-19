@@ -17,6 +17,7 @@ title: Consumption Ideas
 * The Years of Rice and Salt - Kim Stanley Robinson
 * New York 2140 - Kim Stanley Robinson
 * RailSea - China Mieville
+* The Book of Dust - Phillip Pullman
 
 ### Re-read
 
